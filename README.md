@@ -7,14 +7,10 @@ A clone of the [rdiff](https://linux.die.net/man/1/rdiff) utility
 3. build the project inside the *build* folder
 
 # Running the tool 
-- create signature for old file
-RollDiffApp signature old-file signature-file
+- create signature for old file: **RollDiffApp signature old-file signature-file**
 
-- create delta using signature file and new file
-RollDiffApp delta signature-file new-file delta-file
+- create delta using signature file and new file: **RollDiffApp delta signature-file new-file delta-file**
 
-- generate new file using old file and delta
-RollDiffApp patch old-file delta-file patched-file
+- generate new file using old file and delta: **RollDiffApp patch old-file delta-file patched-file**
 
-- test
-diff -s patched-file new-file
+- test: **diff -s patched-file new-file**
